@@ -60,7 +60,7 @@
                   </Menu>
                </menus>
             </MenuBar>
-            <TableView fx:id="tableInfo" layoutX="6.0" layoutY="36.0" prefHeight="740.0" prefWidth="1024.0">
+            <TableView fx:id="tableInfo" layoutX="6.0" layoutY="36.0" onMouseClicked="#outputDocFromInfo" prefHeight="740.0" prefWidth="1024.0">
                <columns>
                   <TableColumn id="info_ID" fx:id="infoID" prefWidth="33.0" text="ID" />
                   <TableColumn fx:id="infoRealtyID" prefWidth="249.0" text="name" />

@@ -19,7 +19,7 @@ import static com.example.doc_repository.mysql_db.sqlConnect;
 
 public class controller implements Initializable {
     mysql_db mysqlDB = new mysql_db();
-    String url = "jdbc:mysql://109.126.196.146:3306/doc-repository";
+    String url = "jdbc:mysql://213.167.218.132:3306/doc-repository";
     String user = "c1berk0tleta";
     String password = "os1R$USNES$";
     public Connection connection;
@@ -208,10 +208,11 @@ public class controller implements Initializable {
             throw new RuntimeException(e);
         }
     }
-
+    @FXML
     protected void outputDocFromInfo() {
         tableInfo.setVisible(false);
         tableRealty.setVisible(true);
+        tableInfo.getOnMouseClicked();
     }
 
 
